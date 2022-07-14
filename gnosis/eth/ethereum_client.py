@@ -262,6 +262,10 @@ class BatchCallManager(EthereumClientManager):
         response = self.http_session.post(
             self.ethereum_node_url, json=queries, timeout=self.slow_timeout
         )
+        logger.warning("Making batch requests")
+        message = f"Requesting from `{self.ethereum_node_url}` queries={queries}"
+        logger.warning(message)
+        logger.warning(f"Response: {response.json()}")
         if not response.ok:
             raise ConnectionError(
                 f"Error connecting to {self.ethereum_node_url}: {response.text}"
