@@ -31,6 +31,9 @@ class TransactionServiceApi(SafeBaseAPI):
         EthereumNetwork.RINKEBY: "https://safe-transaction.rinkeby.gnosis.io",
         EthereumNetwork.VOLTA: "https://safe-transaction.volta.gnosis.io",
         EthereumNetwork.XDAI: "https://safe-transaction.xdai.gnosis.io",
+        EthereumNetwork.MOON_MOONBEAM: "https://transaction.multisig.moonbeam.network",
+        EthereumNetwork.MOON_MOONRIVER: "https://transaction.moonriver.multisig.moonbeam.network",
+        EthereumNetwork.MOON_MOONBASE: "https://transaction.moonbase.multisig.moonbeam.network",
     }
 
     @classmethod
