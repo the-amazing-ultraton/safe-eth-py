@@ -31,6 +31,8 @@ class TransactionServiceApi(SafeBaseAPI):
         EthereumNetwork.RINKEBY: "https://safe-transaction.rinkeby.gnosis.io",
         EthereumNetwork.VOLTA: "https://safe-transaction.volta.gnosis.io",
         EthereumNetwork.XDAI: "https://safe-transaction.xdai.gnosis.io",
+        EthereumNetwork.ASTAR: "https://transaction.safe.astar.network",
+        EthereumNetwork.SHIDEN: "https://transaction.safe.astar.network",
     }
 
     @classmethod
