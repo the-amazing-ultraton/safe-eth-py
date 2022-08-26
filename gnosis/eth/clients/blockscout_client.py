@@ -44,6 +44,7 @@ class BlockscoutClient:
         EthereumNetwork.VENIDIUM: "https://evm.venidiumexplorer.com/",
         EthereumNetwork.KLAY_BAOBAB: "https://baobab.scope.klaytn.com/",
         EthereumNetwork.KLAY_CYPRESS: "https://scope.klaytn.com/",
+        EthereumNetwork.VELAS_MAINNET: "https://evmexplorer.velas.com",
     }
 
     def __init__(self, network: EthereumNetwork):
